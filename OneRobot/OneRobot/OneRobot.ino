@@ -66,17 +66,16 @@ void setup(){
 }
 
 void loop() {
-  Serial.println(analogRead(ANALOG_INPUT));
   switch (state) {
     // The initial state of the robot at the start of the run.
     // Makes sure the arms are folded in and the wheels are not driving.
     // Exits when a button is pressed.
     case 0:
-      rightArm.setPosition(armsFoldedIn);
+      rightArm.setPosition(ArmPosition(50, 90,85));
       kicker.getReady();
       if (digitalRead(BUTTON1) == LOW) {
         runStartTime = millis();
-        goToState(1);
+        //goToState(1);
       }
       break;
 
@@ -293,8 +292,8 @@ void loop() {
 
     case 21:
       wheels::goBackward(FULL_SPEED);
-      leftMoustrap.deposit();
-      rightMousetrap.deposit();
+//      leftMoustrap.deposit();
+//      rightMousetrap.deposit();
       if (millis() - stateStartTime > 500) {
         goToState(22);
       }

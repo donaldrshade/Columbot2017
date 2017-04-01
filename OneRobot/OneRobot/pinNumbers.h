@@ -31,10 +31,10 @@
 #define WHEEL_DIR_FR_F     36
 #define WHEEL_DIR_FL_B     35
 #define WHEEL_DIR_FL_F     37
-#define WHEEL_DIR_BR_B     26 //purple: 31
-#define WHEEL_DIR_BR_F     28 //purple: 33
-#define WHEEL_DIR_BL_B     27 //purple: 23
-#define WHEEL_DIR_BL_F     29 //purple: 25
+#define WHEEL_DIR_BR_B     26
+#define WHEEL_DIR_BR_F     28
+#define WHEEL_DIR_BL_B     27
+#define WHEEL_DIR_BL_F     29
 
 // Speed Pins
 #define WHEEL_PWM_FR      8
@@ -50,17 +50,17 @@
 
 // Arm pins
 #define LEFT_INNER_ARM  6
-#define RIGHT_INNER_ARM 11
 #define LEFT_OUTER_ARM  9
+#define LEFT_CLAW 10
+#define RIGHT_INNER_ARM 11
 #define RIGHT_OUTER_ARM 12 
-#define LEFT_CLAW  10
 #define RIGHT_CLAW 13
 
 // Utility pins
 #define KICKER 5
 #define DUMPER 4
-#define LEFT_MOUSETRAP 40000
-#define RIGHT_MOUSETRAP 40001
+#define LEFT_MOUSETRAP A4
+#define RIGHT_MOUSETRAP A5
 
 // Sensors
 #define RIGHT_CLAW_SENSOR A0
